@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Countries</title>
+<link href="cssfiles/SearchBarStyle.css" type="text/css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+</head>
+<body>
+	<form method="get" action="cities" class="form">
+		<input type="text" name="state-name" placeholder="Type State..." id="search-box" autofocus/>
+		<button type="submit" id="search-btn">Get Cities</button>
+	</form>
+	<div id="display-districts"></div>
+</body>
+<script src="jsfiles/SearchBarScript.js"></script>
+</html>

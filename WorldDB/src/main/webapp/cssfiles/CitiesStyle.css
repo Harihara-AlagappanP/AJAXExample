@@ -1,0 +1,47 @@
+body{
+	width : 100vw;
+	height : 100vh;
+	background-color : rgb(84, 186, 185);
+	font-weight : 600;
+	font-family : 'Patrick Hand', cursive;
+	font-size : 1.2rem;
+	text-align : center;
+	display : flex;
+	flex-direction : column;
+	justify-content : space-evenly;
+	align-items : center;
+}
+
+*{
+	margin : 0;
+	padding : 0;
+	box-sizing : border-box;
+}
+
+#main-title{
+	width : 400px;
+	color : rgb(247, 236, 222);
+	background-color : rgb(24, 151, 143);
+	padding : 10px;
+	border-radius : 10px;
+}
+
+#cities-region{
+	width : 400px;
+	height : 600px;
+	overflow : scroll;
+	border-radius : 10px;
+	background-color : rgb(233, 218, 193);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.city{
+	width : 95%;
+	padding : 5px;
+	margin : 10px;
+	border-radius : 10px;
+	background-color : rgb(84, 186, 185);
+}
