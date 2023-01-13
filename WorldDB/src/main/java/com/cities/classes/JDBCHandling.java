@@ -13,7 +13,7 @@ public class JDBCHandling {
     	ArrayList<String> districts = null;
     	try{
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection connector = DriverManager.getConnection("jdbc:mysql://localhost:3306/world", "Hari", "H@ri_005");
+            Connection connector = DriverManager.getConnection("jdbc:mysql://localhost:3306/world", "<UserName>", "<Password>");
             Statement statementObj = connector.createStatement();
             ResultSet resSet = statementObj.executeQuery("SELECT DISTINCT(District) FROM city WHERE District LIKE '__%';");
 
@@ -36,7 +36,7 @@ public class JDBCHandling {
     	ArrayList<String> cities = null;
     	try {
     		Class.forName("com.mysql.cj.jdbc.Driver");
-    		Connection connector = DriverManager.getConnection("jdbc:mysql://localhost:3306/world", "Hari", "H@ri_005");
+    		Connection connector = DriverManager.getConnection("jdbc:mysql://localhost:3306/world", "<UserName>", "<Password>");
     		Statement stmtObj = connector.createStatement();
     		ResultSet resultSet = stmtObj.executeQuery("SELECT Name FROM city WHERE District = '" + district + "';");
     		
